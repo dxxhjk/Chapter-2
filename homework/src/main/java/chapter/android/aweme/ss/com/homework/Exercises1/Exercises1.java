@@ -1,5 +1,6 @@
-package chapter.android.aweme.ss.com.chapter2.lifecycle;
+package chapter.android.aweme.ss.com.homework.Exercises1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -7,11 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import chapter.android.aweme.ss.com.chapter2.R;
+import chapter.android.aweme.ss.com.homework.R;
 
-public class SaveInstanceStateActivity extends AppCompatActivity {
+public class Exercises1 extends AppCompatActivity {
 
-    private static final String TAG = "wangyi";
+    private static final String TAG = "PAD";
 
     private static final String ON_CREATE = "onCreate1";
     private static final String ON_START = "onStart1";
@@ -27,11 +28,15 @@ public class SaveInstanceStateActivity extends AppCompatActivity {
     private TextView mLifecycleDisplay;
     private static boolean destroyFlag = false;
 
+    public void showDialog(View view) {
+        startActivity(new Intent(this, DialogActivity.class));
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saveinstance);
-        mLifecycleDisplay = findViewById(R.id.tv_loglifecycle);
+        setContentView(R.layout.activity_ex1);
+        mLifecycleDisplay = findViewById(R.id.logcat);
         if (savedInstanceState != null) {
             if (savedInstanceState.containsKey(LIFECYCLE_CALLBACKS_TEXT_KEY)) {
                 String savedContent = (String) savedInstanceState.get(LIFECYCLE_CALLBACKS_TEXT_KEY);
