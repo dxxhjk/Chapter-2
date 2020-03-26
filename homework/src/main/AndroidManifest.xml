@@ -18,9 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Exercises1.Exercises1" />
-        <activity android:name=".Exercises3" />
-        <activity android:name=".Exercises2" />
+        <activity android:name=".Exercises3.Exercises3" />
+        <activity android:name=".Exercises2.Exercises2" />
         <activity android:name=".Exercises1.DialogActivity" />
+        <activity android:name=".Exercises3.ChatRoom" />
         <activity android:name=".tips.SessionActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".tips.ChatRoomActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>

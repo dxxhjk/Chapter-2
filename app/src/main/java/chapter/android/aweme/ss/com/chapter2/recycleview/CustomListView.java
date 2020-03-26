@@ -40,7 +40,7 @@ public class CustomListView extends ViewGroup {
         }
     }
 
-    /**
+    /**11
      * 方式2，通过抽象的方式,依赖倒置，itemview和CustomListView 彻底解耦
      */
     abstract class AbstractAdapter {

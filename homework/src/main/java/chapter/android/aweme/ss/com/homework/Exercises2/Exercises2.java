@@ -1,4 +1,4 @@
-package chapter.android.aweme.ss.com.homework;
+package chapter.android.aweme.ss.com.homework.Exercises2;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import chapter.android.aweme.ss.com.homework.R;
 
 /**
  * 作业2：一个抖音笔试题：统计页面所有view的个数

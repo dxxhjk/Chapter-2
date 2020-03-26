@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import chapter.android.aweme.ss.com.homework.Exercises1.Exercises1;
+import chapter.android.aweme.ss.com.homework.Exercises2.Exercises2;
+import chapter.android.aweme.ss.com.homework.Exercises3.Exercises3;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

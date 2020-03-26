@@ -39,8 +39,9 @@ public class RecycleViewActivity extends AppCompatActivity implements GreenAdapt
          * The GreenAdapter is responsible for displaying each item in the list.
          */
         mAdapter = new GreenAdapter(NUM_LIST_ITEMS, this);
-
         mNumbersListView.setAdapter(mAdapter);
+
+        //添加滑动效果
         mNumbersListView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 
             // 最后一个完全可见项的位置
@@ -71,6 +72,7 @@ public class RecycleViewActivity extends AppCompatActivity implements GreenAdapt
         });
     }
 
+    //添加点击效果
     @Override
     public void onListItemClick(int clickedItemIndex) {
         Log.d(TAG, "onListItemClick: ");
